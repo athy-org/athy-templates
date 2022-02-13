@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Me",
+  "classifications": [
+    "Common",
+    "WebAPI",
+    "C#10"
+  ],
+  "identity": "Athy.Template.OpenAPI.API",
+  "name": "Athy OpenAPI Web API Template",
+  "shortName": "athy-web-api-open-api",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "symbols": {
+    "ClientCode": {
+      "type": "parameter",
+      "description": "The three- or four-letter client code",
+      "datatype": "string",
+      "isRequired": true
+    },
+    "ProjectCode": {
+      "type": "parameter",
+      "description": "The three- or four-letter project code",
+      "datatype": "string",
+      "isRequired": true
+    },
+    "TemplateProject_Rename": {
+      "type": "generated",
+      "description": "New namespace, csproj & directory name based on ClientCode.ProjectCode convention",
+      "generator": "join",
+      "fileRename": "TemplateProject",
+      "replaces": "TemplateProject",
+      "parameters": {
+        "separator": ".",
+        "symbols": [
+          {
+            "type": "ref",
+            "value": "ClientCode"
+          },
+          {
+            "type": "ref",
+            "value": "ProjectCode"
+          }
+        ]
+      }
+    },    
+    "ControllerName":{
+      "type": "parameter",
+      "fileRename": "WeatherForecastController",
+      "replaces": "WeatherForecastController"
+    }
+  }
+}
