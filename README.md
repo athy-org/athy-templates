@@ -28,8 +28,12 @@ dotnet new domain-abstractions-web-api --ClientCode abc --ProjectCode def --Http
 dotnet new domain-abstractions-web-api --ClientCode Abc --ProjectCode Def --HttpPort 5200 --HttpsPort 5201 --dry-run
 
 # more current sample usages
-dotnet new athy-web-api --ClientCode Athy --ProjectCode Iot --HttpPort 6000 --HttpsPort 6001
-dotnet new athy-web-api-open-api --ClientCode Athy --ProjectCode Iot --ControllerName UserController
+dotnet new athy-web-api --ClientCode OpenAPI --ProjectCode PetStore --HttpPort 6000 --HttpsPort 6001
+
+dotnet new athy-web-api-open-api \
+--ClientCode OpenAPI --ProjectCode PetStore --Athy_ControllerName PetController --Athy_ControllerRoute /pet \
+--Athy_ContentType application/json --Athy_EndpointRoute /{petId} --Athy_ReturnTypeName Pet --Athy_ReturnTypeBody JsonStringOfTheSchema \
+--Athy_HttpGetMethodName getPetById --Athy_PathParam petId
 ```
 
 ## conventions / best-practices

@@ -45,11 +45,48 @@
           }
         ]
       }
-    },    
-    "ControllerName":{
+    },
+    "Athy_ControllerName": {
       "type": "parameter",
-      "fileRename": "WeatherForecastController",
-      "replaces": "WeatherForecastController"
+      "fileRename": "Athy_SampleController",
+      "replaces": "Athy_SampleController"
+    },
+    "Athy_ControllerRoute": {
+      "type": "parameter",
+      "replaces": "Athy_ControllerRoute"
+    },
+    "Athy_EndpointRoute": {
+      "type": "parameter",
+      "replaces": "Athy_EndpointRoute"
+    },
+    "Athy_ReturnTypeName": {
+      "type": "parameter",
+      "replaces": "Athy_ReturnTypeName",
+      "fileRename": "Athy_ReturnTypeName"
+    },
+    "Athy_ReturnTypeBody": {
+      "type": "parameter",
+      "replaces": "Athy_ReturnTypeBody"
+    },
+    "Athy_HttpGetMethodName": {
+      "type": "parameter",
+      "replaces": "Athy_HttpGetMethodName"
+    },
+    "Athy_PathParam":{
+      "type": "parameter",
+      "replaces": "Athy_PathParam"
+    },
+    "Athy_QueryStringParam": {
+      "type": "parameter",
+      "replaces": "Athy_QueryStringParam"
+    },
+    "Athy_ContentType": {
+      "type": "parameter",
+      "replaces": "Athy_ContentType"
+    },
+    "Athy_StatusCode": {
+      "type": "parameter",
+      "replaces": "(200)"
     }
   }
 }
