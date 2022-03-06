@@ -87,6 +87,19 @@
     "Athy_StatusCode": {
       "type": "parameter",
       "replaces": "(200)"
+    }, 
+    "Athy_EndpointSignature":{
+      "type": "parameter",
+      "replaces": "Athy_EndpointSignature",
+      "description": "Use to represent the endpoints entire signature. Code will be filled in by the generator according to the spec and conventions."
+    },
+    "Athy_EndpointDescription":{
+      "type": "parameter",
+      "replaces": "Athy_EndpointDescription"
+    },
+    "Athy_HeaderParam":{
+      "type": "parameter",
+      "replaces": "Athy_HeaderParam"
     }
   }
 }

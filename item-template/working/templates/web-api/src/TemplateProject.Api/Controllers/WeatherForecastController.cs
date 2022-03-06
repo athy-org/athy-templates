@@ -19,11 +19,16 @@ public class WeatherForecastController : ControllerBase
         _logger = logger;
     }
 
-    [HttpGet(Name = "GetWeatherForecast")]
+    /// <summary>
+    /// Athy_EndpointDescription
+    /// </summary>
+    /// <param name="number"></param>
+    /// <returns></returns>
+    [HttpGet("{number}")]
     [ProducesResponseType(typeof(IEnumerable<WeatherForecast>), (200), "application/json")]
-    public IEnumerable<WeatherForecast> Get()
+    public IEnumerable<WeatherForecast> Get([FromRoute] int number)
     {
-        return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+        return Enumerable.Range(1, number).Select(index => new WeatherForecast
         {
             Date = DateTime.Now.AddDays(index),
             TemperatureC = Random.Shared.Next(-20, 55),
