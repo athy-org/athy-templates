@@ -29,16 +29,16 @@
     "HttpPort": {
       "type": "parameter",
       "description": "The APIs HTTP port",
-      "replaces": "{HttpPort}",
+      "replaces": "9990",
       "datatype": "int",
-      "defaultValue": "9000"
+      "defaultValue": "9990"
     },
     "HttpsPort": {
       "type": "parameter",
       "description": "The APIs HTTPS port",
-      "replaces": "{HttpsPort}",
+      "replaces": "9999",
       "datatype": "int",
-      "defaultValue": "9001"
+      "defaultValue": "9990"
     },
     "TemplateProject_Rename": {
       "type": "generated",
