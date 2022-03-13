@@ -62,21 +62,40 @@ Prefix all template symbols (parameters) with `Template__`. This enables the tem
 
 - issue: cannot merge the same file with another, have to use --force. so, you can't run a template x times for the same output file.
 you have to specify everything at once for that template run.
-
-- solutions: ?
+- solutions: don't try to run multiple times, use below solutions to allow once-off runs.
 
 - issue: params need to be specific to map to the correct endpoint code. can't use the same param name for a GET and a POST if they have different schemas in actuality. e.g., can't use Athy_ReturnTypeName over and over for each endpoint as each endpoint will probably have different return types, so the last endpoint would replace all the others.
 
 - solutions: params need to be specific. e.g., need param set for _GET_, _POST_, etc. so Athy_ReturnTypeName_Get, Athy_ReturnTypeName_Post etc.
 then, generator-cli will have to match up `dotnet new` call from swagger spec such that open-api `path` for `get` goes to a param for `_Get`, etc.
-
 - solutions: the entire endpoint code is completely parametised. this will likely not be a 'runnable template project' anymore. so, we have param Athy_HttpMethod
 which is fille in by the generator-cli from the swagger spec, and replaced by `HttpGet` c# code etc. in this case only one "endpoint" sample exists because it is re-used.
 
 - issue: controller sample template needs to have multiple of the same HTTP method, so even Athy_ReturnTypeName_Get is insufficient.
-
 - solutions: dev uses Athy_ReturnTypeName_Get params, but generator-cli will auto-append numbers e.g, Athy_ReturnTypeName_Get_1, per set of methods. so we will actually be generating the template itself a bit?
 
 - issue: similar param names will overwrite each other partially?
-
 - solutions: test if this is the case?
+- [no]
+
+## decisions
+
+- can't use `dotnet new` out-the-box for open-api gen. so,
+- write the tool to pull in the controller template.
+- this tmpl must be using the cli variable API e.g. Athy__.
+- the tmpl contains only one method.
+- the cli will use the open-api spec to write out a new version of the template.
+- the new tmpl version will have x methods for each endpoint-path in the open-api spec.
+- the cli will then use this new tmpl_generated with params Athy_HttpMethod_1 etc. and map from the spec.
+- schema models will also live wherever in the solution structure that they are defined with an Athy__ param.
+
+or
+
+- investigate using other tools for the merge function?
+- yeoman.
+
+and/or
+
+- Nuget pkg for placeholder types.
+- [no] Run template for file vs for values - --force required?
+- [done] Document an example workflow for the dev.
