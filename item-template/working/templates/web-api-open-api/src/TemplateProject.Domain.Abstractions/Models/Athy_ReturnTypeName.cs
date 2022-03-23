@@ -1,5 +1,5 @@
 namespace TemplateProject.Domain.Abstractions;
-public class Athy_ReturnTypeName
+public class Athy__ReturnTypeName
 {
-    //Athy_ReturnTypeBody
+    //Athy__ReturnTypeBody
 }

@@ -20,7 +20,7 @@ public class WeatherForecastController : ControllerBase
     }
 
     /// <summary>
-    /// Athy_EndpointDescription
+    /// EndpointDescription
     /// </summary>
     /// <param name="number"></param>
     /// <returns></returns>

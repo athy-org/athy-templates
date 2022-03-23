@@ -14,92 +14,64 @@
     "type": "project"
   },
   "symbols": {
-    "ClientCode": {
+    "Athy__ControllerName": {
       "type": "parameter",
-      "description": "The three- or four-letter client code",
-      "datatype": "string",
-      "isRequired": true
+      "fileRename": "Athy__SampleController",
+      "replaces": "Athy__SampleController"
     },
-    "ProjectCode": {
+    "Athy__ControllerRoute": {
       "type": "parameter",
-      "description": "The three- or four-letter project code",
-      "datatype": "string",
-      "isRequired": true
+      "replaces": "Athy__ControllerRoute"
     },
-    "TemplateProject_Rename": {
-      "type": "generated",
-      "description": "New namespace, csproj & directory name based on ClientCode.ProjectCode convention",
-      "generator": "join",
-      "fileRename": "TemplateProject",
-      "replaces": "TemplateProject",
-      "parameters": {
-        "separator": ".",
-        "symbols": [
-          {
-            "type": "ref",
-            "value": "ClientCode"
-          },
-          {
-            "type": "ref",
-            "value": "ProjectCode"
-          }
-        ]
-      }
-    },
-    "Athy_ControllerName": {
+    "Athy__EndpointRoute": {
       "type": "parameter",
-      "fileRename": "Athy_SampleController",
-      "replaces": "Athy_SampleController"
+      "replaces": "Athy__EndpointRoute"
     },
-    "Athy_ControllerRoute": {
+    "Athy__ReturnTypeName": {
       "type": "parameter",
-      "replaces": "Athy_ControllerRoute"
+      "replaces": "Athy__ReturnTypeName",
+      "fileRename": "Athy__ReturnTypeName"
     },
-    "Athy_EndpointRoute": {
+    "Athy__ReturnTypeBody": {
       "type": "parameter",
-      "replaces": "Athy_EndpointRoute"
+      "replaces": "Athy__ReturnTypeBody"
     },
-    "Athy_ReturnTypeName": {
+    "Athy__HttpGetMethodName": {
       "type": "parameter",
-      "replaces": "Athy_ReturnTypeName",
-      "fileRename": "Athy_ReturnTypeName"
+      "replaces": "Athy__HttpGetMethodName"
     },
-    "Athy_ReturnTypeBody": {
+    "Athy__PathParam":{
       "type": "parameter",
-      "replaces": "Athy_ReturnTypeBody"
+      "replaces": "Athy__PathParam"
     },
-    "Athy_HttpGetMethodName": {
+    "Athy__QueryStringParam": {
       "type": "parameter",
-      "replaces": "Athy_HttpGetMethodName"
+      "replaces": "Athy__QueryStringParam"
     },
-    "Athy_PathParam":{
+    "Athy__ContentType": {
       "type": "parameter",
-      "replaces": "Athy_PathParam"
+      "replaces": "Athy__ContentType"
     },
-    "Athy_QueryStringParam": {
-      "type": "parameter",
-      "replaces": "Athy_QueryStringParam"
-    },
-    "Athy_ContentType": {
-      "type": "parameter",
-      "replaces": "Athy_ContentType"
-    },
-    "Athy_StatusCode": {
+    "Athy__StatusCode": {
       "type": "parameter",
       "replaces": "(200)"
     }, 
-    "Athy_EndpointSignature":{
+    "Athy__EndpointSignature":{
       "type": "parameter",
-      "replaces": "Athy_EndpointSignature",
+      "replaces": "Athy__EndpointSignature",
       "description": "Use to represent the endpoints entire signature. Code will be filled in by the generator according to the spec and conventions."
     },
-    "Athy_EndpointDescription":{
+    "Athy__EndpointDescription":{
       "type": "parameter",
-      "replaces": "Athy_EndpointDescription"
+      "replaces": "Athy__EndpointDescription"
     },
-    "Athy_HeaderParam":{
+    "Athy__HeaderParam":{
       "type": "parameter",
-      "replaces": "Athy_HeaderParam"
+      "replaces": "Athy__HeaderParam"
+    },
+    "Athy__HttpMethod": {
+      "type": "parameter",
+      "replaces": "Athy__HttpMethod"      
     }
   }
 }

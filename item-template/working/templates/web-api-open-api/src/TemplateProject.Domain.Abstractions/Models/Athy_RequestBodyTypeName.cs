@@ -1,5 +1,5 @@
 namespace TemplateProject.Domain.Abstractions;
-public class Athy_RequestBodyTypeName
+public class Athy__RequestBodyTypeName
 {
-    //Athy_RequestBody
+    //Athy__RequestBody
 }

@@ -3,38 +3,26 @@ using Microsoft.AspNetCore.Mvc;
 namespace TemplateProject.Api.Controllers;
 
 [ApiController]
-[Route("Athy_ControllerRoute")]
-[Produces("Athy_ContentType")]
-public class Athy_SampleController : ControllerBase
+[Route("Athy__ControllerRoute")]
+[Produces("Athy__ContentType")]
+public class Athy__SampleController : ControllerBase
 {
-    private readonly ILogger<Athy_SampleController> _logger;
+    private readonly ILogger<Athy__SampleController> _logger;
 
-    public Athy_SampleController(ILogger<Athy_SampleController> logger)
+    public Athy__SampleController(ILogger<Athy__SampleController> logger)
     {
         _logger = logger;
     }
 
     /// <summary>
-    /// Athy_EndpointDescription
+    /// Athy__EndpointDescription
     /// </summary>
-    /// <param name="Athy_EndpointRoute"></param>
+    /// <param name="Athy__EndpointRoute"></param>
     /// <returns></returns>
-    [HttpGet("Athy_EndpointRoute")]
-    [ProducesResponseType(typeof(Athy_ReturnTypeName), (200), "Athy_ContentType")]
-    public async Task<ActionResult<Athy_ReturnTypeName>> Athy_HttpGetMethodName([FromHeader] string Athy_HeaderParam, [FromPath] string Athy_PathParam, [FromQuery] string Athy_QueryStringParam)
+    [Athy__HttpMethod("Athy__EndpointRoute")]
+    [ProducesResponseType(typeof(Athy__ReturnTypeName), (200), "Athy__ContentType")]
+    public async Task<ActionResult<Athy__ReturnTypeName>> Athy__HttpGetMethodName([FromHeader] string Athy__HeaderParam, [FromPath] string Athy__PathParam, [FromQuery] string Athy__QueryStringParam)
     {
-        return Ok(new Athy_ReturnTypeName());
-    }
-
-    /// <summary>
-    /// Athy_EndpointDescription
-    /// </summary>
-    /// <param name="Athy_EndpointRoute"></param>
-    /// <returns></returns>
-    [HttpPost("Athy_EndpointRoute")]
-    [ProducesResponseType(typeof(Athy_ReturnTypeName), (200), "Athy_ContentType")]
-    public async Task<ActionResult<Athy_ReturnTypeName>> Athy_HttpPostMethodName([FromHeader] string Athy_HeaderParam, [FromPath] string Athy_PathParam, [FromBody] Athy_RequestBodyTypeName Athy_BodyParam)
-    {
-        return Ok(new Athy_ReturnTypeName());
+        return Ok(new Athy__ReturnTypeName());
     }
 }
