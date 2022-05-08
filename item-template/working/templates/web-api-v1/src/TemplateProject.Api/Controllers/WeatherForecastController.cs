@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Swashbuckle.AspNetCore.Annotations;
 
 namespace TemplateProject.Api.Controllers;
 
@@ -25,7 +26,8 @@ public class WeatherForecastController : ControllerBase
     /// <param name="number"></param>
     /// <returns></returns>
     [HttpGet("{number}")]
-    [ProducesResponseType(typeof(IEnumerable<WeatherForecast>), (200), "application/json")]
+    [SwaggerResponse(201, "The weather values", typeof(IEnumerable<WeatherForecast>), ContentTypes = new string[] { "application/json" })]
+    [SwaggerResponse(500, "Server error", typeof(ProblemDetails))]
     public IEnumerable<WeatherForecast> Get([FromRoute] int number)
     {
         return Enumerable.Range(1, number).Select(index => new WeatherForecast

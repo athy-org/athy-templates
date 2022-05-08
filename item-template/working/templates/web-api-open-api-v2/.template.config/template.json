@@ -1,0 +1,78 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Me",
+  "classifications": [
+    "Common",
+    "WebAPI",
+    "C#10"
+  ],
+  "identity": "Athy.Template.OpenAPI.API",
+  "name": "Athy OpenAPI Web API Template",
+  "shortName": "athy-web-api-open-api",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "symbols": {
+    "Athy__ControllerName": {
+      "type": "parameter",
+      "fileRename": "Athy__SampleController",
+      "replaces": "Athy__SampleController"
+    },
+    "Athy__ControllerRoute": {
+      "type": "parameter",
+      "replaces": "Athy__ControllerRoute"
+    },
+    "Athy__ContentType": {
+      "type": "parameter",
+      "replaces": "Athy__ContentType"
+    },    
+    "Athy__EndpointRoute": {
+      "type": "parameter",
+      "replaces": "Athy__EndpointRoute"
+    },
+    "Athy__ReturnTypeName": {
+      "type": "parameter",
+      "replaces": "Athy__ReturnTypeName",
+      "fileRename": "Athy__ReturnTypeName"
+    },
+    "Athy__ReturnTypeBody": {
+      "type": "parameter",
+      "replaces": "Athy__ReturnTypeBody"
+    },
+    "Athy__RequestBodyTypeName": {
+      "type": "parameter",
+      "replaces": "Athy__RequestBodyTypeName",
+      "fileRename": "Athy__RequestBodyTypeName"
+    },
+    "Athy__RequestBody": {
+      "type": "parameter",
+      "replaces": "Athy__RequestBody"
+    },    
+    "Athy__EndpointMethodName": {
+      "type": "parameter",
+      "replaces": "Athy__EndpointMethodName"
+    }, 
+    "Athy__EndpointSignature":{
+      "type": "parameter",
+      "replaces": "Athy__EndpointSignature",
+      "description": "Use to represent the endpoints entire signature. Code will be filled in by the generator according to the spec and conventions."
+    },
+    "Athy__EndpointDescription":{
+      "type": "parameter",
+      "replaces": "Athy__EndpointDescription"
+    },
+    "Athy__HttpMethod": {
+      "type": "parameter",
+      "replaces": "Athy__HttpMethod"      
+    },
+    "Athy__SwaggerResponse": {
+      "type": "parameter",
+      "replaces": "Athy__SwaggerResponse"      
+    },
+    "Athy__ReturnExpression": {
+      "type": "parameter",
+      "replaces": "Athy__ReturnExpression"      
+    }
+  }
+}

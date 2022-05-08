@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Swashbuckle.AspNetCore.Annotations;
 
 namespace TemplateProject.Api.Controllers;
 
@@ -20,8 +21,8 @@ public class Athy__SampleController : ControllerBase
     /// <param name="Athy__EndpointRoute"></param>
     /// <returns></returns>
     [Athy__HttpMethod("Athy__EndpointRoute")]
-    [ProducesResponseType(typeof(Athy__ReturnTypeName), (200), "Athy__ContentType")]
-    public async Task<ActionResult<Athy__ReturnTypeName>> Athy__HttpGetMethodName([FromHeader] string Athy__HeaderParam, [FromPath] string Athy__PathParam, [FromQuery] string Athy__QueryStringParam)
+    [SwaggerResponse((200), "Athy_Response_Description", typeof(Athy__ReturnTypeName), ContentTypes = new string[] { "Athy__ContentType" })]
+    public async Task<ActionResult<Athy__ReturnTypeName>> Athy__HttpGetMethodName([FromHeader] string Athy__HeaderParam, [FromRoute] string Athy__PathParam, [FromQuery] string Athy__QueryStringParam)
     {
         return Ok(new Athy__ReturnTypeName());
     }
