@@ -26,7 +26,7 @@ public class WeatherForecastController : ControllerBase
     /// <param name="number"></param>
     /// <returns></returns>
     [HttpGet("{number}")]
-    [SwaggerResponse(201, "The weather values", typeof(IEnumerable<WeatherForecast>), ContentTypes = new string[] { "application/json" })]
+    [SwaggerResponse(201, "The weather values", typeof(IEnumerable<WeatherForecast>), new [] { "application/json" })]
     [SwaggerResponse(500, "Server error", typeof(ProblemDetails))]
     public IEnumerable<WeatherForecast> Get([FromRoute] int number)
     {

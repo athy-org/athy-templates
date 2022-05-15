@@ -64,15 +64,15 @@
     },
     "Athy__HttpMethod": {
       "type": "parameter",
-      "replaces": "Athy__HttpMethod"      
+      "replaces": "Athy__HttpMethod"
     },
     "Athy__SwaggerResponse": {
       "type": "parameter",
-      "replaces": "Athy__SwaggerResponse"      
+      "replaces": "[Athy__SwaggerResponse]"
     },
     "Athy__ReturnExpression": {
       "type": "parameter",
-      "replaces": "Athy__ReturnExpression"      
+      "replaces": "Athy__ReturnExpression"
     }
   }
 }
