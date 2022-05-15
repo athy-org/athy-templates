@@ -22,7 +22,7 @@ public class Athy__SampleController : ControllerBase
     /// <returns></returns>
     [Athy__HttpMethod("Athy__EndpointRoute")]
     [Athy__SwaggerResponse]
-    public async Task<ActionResult<Athy__ReturnTypeName>> Athy__EndpointMethodName(Athy__EndpointSignature athy__EndpointSignature)
+    public async Task<ActionResult<Athy__ReturnTypeName>> Athy__EndpointMethodName(Athy__EndpointSignature athy__EndpointSignatureParam)
     {
         return Athy__ReturnExpression;
     }

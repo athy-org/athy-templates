@@ -56,11 +56,17 @@
     "Athy__EndpointSignature":{
       "type": "parameter",
       "replaces": "Athy__EndpointSignature",
-      "description": "Use to represent the endpoints entire signature. Code will be filled in by the generator according to the spec and conventions."
+      "description": "Use to represent the endpoints entire signature. Code will be filled in by the generator according to the spec and conventions.",
+      "isRequired": false,
+      "datatype": "text",
+      "defaultValue": ""      
     },
     "Athy__EndpointDescription":{
       "type": "parameter",
-      "replaces": "Athy__EndpointDescription"
+      "replaces": "Athy__EndpointDescription",
+      "isRequired": false,
+      "datatype": "text",
+      "defaultValue": ""
     },
     "Athy__HttpMethod": {
       "type": "parameter",
@@ -73,6 +79,13 @@
     "Athy__ReturnExpression": {
       "type": "parameter",
       "replaces": "Athy__ReturnExpression"
+    },
+    "athy__EndpointSignatureParam":{
+      "type": "parameter",
+      "replaces": "athy__EndpointSignatureParam",
+      "isRequired": false,      
+      "datatype": "text",
+      "defaultValue": ""
     }
   }
 }
