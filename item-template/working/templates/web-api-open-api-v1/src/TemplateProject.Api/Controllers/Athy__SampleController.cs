@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using TemplateProject.Domain.Abstractions;
 
 namespace TemplateProject.Api.Controllers;
 

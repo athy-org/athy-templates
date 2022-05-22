@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using TemplateProject.Domain.Abstractions;
 using Swashbuckle.AspNetCore.Annotations;
 
 namespace TemplateProject.Api.Controllers;
