@@ -14,46 +14,37 @@
     "type": "project"
   },
   "symbols": {
-    "Athy__ControllerName": {
+    "ControllerName": {
       "type": "parameter",
       "fileRename": "Athy__SampleController",
       "replaces": "Athy__SampleController"
     },
-    "Athy__ControllerRoute": {
+    "ControllerRoute": {
       "type": "parameter",
       "replaces": "Athy__ControllerRoute"
     },
-    "Athy__ContentType": {
+    "RequestContentType": {
       "type": "parameter",
       "replaces": "Athy__ContentType"
     },    
-    "Athy__EndpointRoute": {
+    "Route": {
       "type": "parameter",
       "replaces": "Athy__EndpointRoute"
     },
-    "Athy__ReturnTypeName": {
+    "ReturnTypeName": {
       "type": "parameter",
       "replaces": "Athy__ReturnTypeName",
       "fileRename": "Athy__ReturnTypeName"
     },
-    "Athy__ReturnTypeBody": {
+    "ReturnTypeBody": {
       "type": "parameter",
       "replaces": "Athy__ReturnTypeBody"
     },
-    "Athy__RequestBodyTypeName": {
-      "type": "parameter",
-      "replaces": "Athy__RequestBodyTypeName",
-      "fileRename": "Athy__RequestBodyTypeName"
-    },
-    "Athy__RequestBody": {
-      "type": "parameter",
-      "replaces": "Athy__RequestBody"
-    },    
-    "Athy__EndpointMethodName": {
+    "MethodName": {
       "type": "parameter",
       "replaces": "Athy__EndpointMethodName"
     }, 
-    "Athy__EndpointSignature":{
+    "Signature":{
       "type": "parameter",
       "replaces": "Athy__EndpointSignature",
       "description": "Use to represent the endpoints entire signature. Code will be filled in by the generator according to the spec and conventions.",
@@ -61,22 +52,22 @@
       "datatype": "text",
       "defaultValue": ""      
     },
-    "Athy__EndpointDescription":{
+    "Description":{
       "type": "parameter",
       "replaces": "Athy__EndpointDescription",
       "isRequired": false,
       "datatype": "text",
       "defaultValue": ""
     },
-    "Athy__HttpMethod": {
+    "HttpMethod": {
       "type": "parameter",
       "replaces": "Athy__HttpMethod"
     },
-    "Athy__SwaggerResponse": {
+    "SwaggerResponse": {
       "type": "parameter",
       "replaces": "[Athy__SwaggerResponse]"
     },
-    "Athy__ReturnExpression": {
+    "MethodReturnExpression": {
       "type": "parameter",
       "replaces": "Athy__ReturnExpression"
     },
